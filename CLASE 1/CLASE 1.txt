@@ -1,0 +1,42 @@
+Contenedor que gestiona el ciclo de vida de los objetos.
+
+Permite trabajar mas detalladamente en la log de la aplicación.
+
+Aplicación sin spring
+
+Refactorizando a spring-
+
+
+Spring framework.
+
+AOP - programación orientada a aspectos
+
+orientado a test
+
+framework -> soporte que proporciona 3 elementos
+servicios empresariales -> objetos transaccionales o acceso restrig a roles o que sea accesible, de manera remota y transparente a desarrollador
+Estereotipos configurables -> notar clases que pertenecen a capa de negocios o acceso a dato. Podemos configurarlo.
+(Java web api) Inyeccion de dependencia: permite objeto conozca dependencia sin definir clase.
+
+objeto de negocio?
+
+
+Inyeccion de dependencia -> permite a objeto conozca su dependencia mediante interface y no implementacion.
+trabajar directo con interface
+
+Objetivo: lograr bajo acoplamiento entre objetos -> objetos no buscan dependencias, son suministradas por contenedor (tercero) -> encargado de instanciar objeto.
+
+Se invierte la responsabilidad
+
+Inversión de control? Que es? estilo de programación . controla flujod el programa.
+cambio a paradig convencionales.
+
+modificar pieza de software sin reprogramar. elementos variables.
+
+mejroa en test.
+
+Sin utilizar NEW
+
+MOCKING -> SIMULAR PIEZAS DE DEPENDENCIAS
+
+Anotaciones de Spring + Inyección de dependencias
