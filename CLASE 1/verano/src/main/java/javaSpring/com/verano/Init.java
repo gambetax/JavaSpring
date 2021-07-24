@@ -10,13 +10,26 @@ import com.bolivarsoft.sensorvelocidad.SensorVelocidad;
 import javaSpring.com.services.EvaluadorMultas;
 import javaSpring.com.services.GrabadorMultaJson;
 import javaSpring.com.services.SensorInEternum;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
-/**
- *
- * @author Marian
- */
+class Servicio1{
+    public void ejecutar(){
+        System.out.println("Hola desde servicio1");
+    }
+}
+
+class Servicio2{
+    public void ejecutarTb(){
+        
+    }
+}
+
+
+
 @Service
 public class Init implements CommandLineRunner{
     //Implementación de interface
@@ -32,11 +45,25 @@ public class Init implements CommandLineRunner{
         );
     }
     
+    @Bean //
+    Servicio1 crearServicio1(){
+        
+        
+        return new Servicio1();
+    }
+    
+    @Autowired
+    ApplicationContext applicationContext; 
+    
+    
     @Override
     public void run(String... args) throws Exception {
         
        //ejecución de aplicación
-       factory().sensar();
+       //factory().sensar();
+       
+       Servicio1 srv1 = null;
+       srv1 = applicationContext.getBean(Servicio1.class);
     }
   
 }
