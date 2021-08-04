@@ -9,19 +9,22 @@ import com.bolivarsoft.sensorclima.SensorClima;
 import com.bolivarsoft.sensorclima.TipoClima;
 import com.bolivarsoft.sensorvelocidad.DatosVehiculo;
 import com.bolivarsoft.sensorvelocidad.SensorVelocidad;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author Marian
  */
-public class SensorInEterno {
+@Component
+public class SensorInEternum {
 
     //fuera del metodo siempre para que llame
     private SensorClima sensorClima;
     private SensorVelocidad sensorVelocidad;
     private EvaluadorMultas evaluadorMultas;
 
-    public SensorInEterno(SensorClima sensorClima, SensorVelocidad sensorVelocidad, EvaluadorMultas evaluadorMultas) {
+    public SensorInEternum(EvaluadorMultas evaluadorMultas
+    ) {
         this.sensorClima = sensorClima;
         this.sensorVelocidad = sensorVelocidad;
         this.evaluadorMultas = evaluadorMultas;
